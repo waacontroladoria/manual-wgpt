@@ -90,6 +90,8 @@ Quanto mais contexto e mais claro o objetivo, melhor o agente identifica a taref
 
 ### Use as sugestões de instrução (pills)
 
+![pills](pills.png)
+
 Na Análise Jurídica, acima do campo de mensagem existem **pills de instrução** organizadas por categoria — clicar em uma delas já direciona o tom e o tipo de tarefa para o Orquestrador:
 
 | Categoria | Instruções disponíveis |
@@ -97,6 +99,7 @@ Na Análise Jurídica, acima do campo de mensagem existem **pills de instrução
 | **Orientação** | Explicar conceitualmente • Tirar dúvida processual |
 | **Estratégia** | Desenvolver tese • Revisar fundamentações • Analisar viabilidade e riscos • Elaborar parecer técnico • Contrapor argumentos |
 | **Documentos** | Resumir petição |
+
 
 A pill selecionada é somada à sua mensagem antes do envio e se desmarca sozinha depois — você pode digitar livremente além dela.
 
@@ -162,6 +165,9 @@ Por isso, use o botão **"Exportar .docx"** (disponível a partir da primeira re
 
 ---
 
-## Changelog do manual
+## Changelog 
 
-<!-- Espaço reservado para atualizações futuras deste manual. Preenchimento manual — não editado automaticamente pelo assistente. -->
+**29/06/2026:**
+- Adicionada ferramenta de OCR para leitura de imagens no corpo de arquivos .pdf e .docx.
+- Separado módulo de "Análise de Legislação" para revisão única.
+
