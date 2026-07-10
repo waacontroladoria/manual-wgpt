@@ -1,6 +1,6 @@
 # Manual do Usuário — WGPT
 
-Objetivo desse repositório é explicar **o que cada tela faz**, **como a IA decide quem responde** e **como escrever pedidos e anexar arquivos** para obter as melhores respostas.
+Objetivo desse repositório é explicar **o que cada tela faz**, **como a IA decide quem responde** e **como escrever pedidos** para obter as melhores respostas.
 
 ---
 
@@ -64,27 +64,7 @@ Importante: quem decide acionar o Pesquisador é o **agente especializado que es
 
 No painel **"Ver raciocínio"** abaixo de cada resposta, você acompanha em tempo real qual agente está ativo, quando ocorre um repasse (handoff) para outro agente e quais ferramentas de pesquisa foram consultadas — útil para conferir a base da resposta antes de confiar nela.
 
-### Análise de Legislação — fluxo dedicado
-
-O módulo **Análise de Legislação** usa uma dupla própria, sem passar pelo Orquestrador:
-
-```mermaid
-flowchart LR
-    U2["Lei/normativo/minuta enviada"] --> AN["Analista"]
-    AN -->|"precisa de pesquisa complementar"| PE2["Pesquisador"]
-    PE2 -->|"devolve o material pesquisado"| AN
-    AN --> R2["Análise final"]
-```
-
-O **Analista** é especializado em estudo de legislações, portarias e normativos (adequação, riscos de compliance, oportunidades de atuação) e pode acionar o Pesquisador quando precisar de apoio.
-
-### Revisão Textual — agente único, sem repasses
-
-O módulo **Revisão Textual** usa apenas o **Revisor**, especializado em revisão de textos jurídicos (ortografia, clareza, coesão, estrutura argumentativa). Não há conversa nem histórico: cada revisão é um envio único e independente.
-
----
-
-## 3. Boas práticas de prompt (como escrever seu pedido)
+## 3. Boas práticas de prompt
 
 Quanto mais contexto e mais claro o objetivo, melhor o agente identifica a tarefa e melhor é a resposta. Evite pedidos genéricos, especialmente quando há um documento anexado.
 
@@ -119,6 +99,31 @@ Dicas gerais:
 - Para casos com múltiplas perguntas, prefira dividir em mensagens separadas (lembre-se do limite de 5 mensagens por conversa — seção 6).
 
 ---
+
+### 
+
+### Análise de Legislação — fluxo dedicado
+
+O módulo **Análise de Legislação** usa uma dupla própria, sem passar pelo Orquestrador:
+
+```mermaid
+flowchart LR
+    U2["Lei/normativo/minuta enviada"] --> AN["Analista"]
+    AN -->|"precisa de pesquisa complementar"| PE2["Pesquisador"]
+    PE2 -->|"devolve o material pesquisado"| AN
+    AN --> R2["Análise final"]
+```
+
+O **Analista** é especializado em estudo de legislações, portarias e normativos (adequação, riscos, compliance, oportunidades de atuação) e pode acionar o Pesquisador quando precisar de apoio.
+
+---
+
+### Revisão Textual — agente único, sem repasses
+
+O módulo **Revisão Textual** usa apenas o **Revisor**, especializado em revisão de textos jurídicos (ortografia, clareza, coesão, estrutura argumentativa). Não há conversa nem histórico: cada revisão é um envio único e independente.
+
+---
+
 
 ## 4. Formato e formatação de arquivos para anexar
 
