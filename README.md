@@ -1,6 +1,6 @@
 # Manual do Usuário — WGPT
 
-Guia de uso da plataforma de apoio jurídico com IA do escritório. Este manual não trata de código ou tecnologia — o objetivo é explicar **o que cada tela faz**, **como a IA decide quem responde** e **como escrever pedidos e anexar arquivos** para obter as melhores respostas.
+Objetivo desse repositório é explicar **o que cada tela faz**, **como a IA decide quem responde** e **como escrever pedidos e anexar arquivos** para obter as melhores respostas.
 
 ---
 
