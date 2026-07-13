@@ -90,7 +90,7 @@ A pill selecionada é somada à sua mensagem antes do envio e se desmarca sozinh
 | "Me ajude com essa petição" (com anexo) | "Analise a viabilidade de recurso neste acórdão anexo, focando em prequestionamento e violação ao art. 927 do CPC. Traga um parecer estruturado com riscos e prazo recursal. | Explicar o documento e sua estrutura, poupa tokens que seriam utilizados para o agente identificar o tipo de tarefa que irá executar, e comprender o documento anexado." |
 | "O que diz a lei sobre isso?" | "Explique conceitualmente os requisitos de estabilidade do servidor público estatutário segundo a Lei 8.112, citando os artigos aplicáveis." | Define o objeto central da análise sem que o agente precise adivinhar. |
 | "Resume esse documento" | "Resuma a petição anexa em até 10 tópicos, destacando pedido principal, fundamentos jurídicos e valor da causa." | Define o foco da busca, melhorando o resultado para o que se pretende. |
-| "Essa tese está boa?" | "Revise as seguintes fundamentações e aponte contradições ou lacunas argumentais, sugerindo ajustes." | Prioriza elementos específicos na revisão para que o agente analise os elementos mais importantes.  |
+| "Essa tese está boa?" | "Revise as seguintes fundamentações e aponte contradições ou lacunas argumentais, sugerindo ajustes." | Prioriza elementos específicos na revisão para que o agente analise os conteúdos mais relevantes.  |
 
 Dicas gerais:
 - Diga **o que você quer receber de volta** (parecer, lista de riscos, tópicos, comparação) — não só o tema.
